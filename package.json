@@ -1,0 +1,22 @@
+{
+  "name": "offline-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdokkeren/offline-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webdokkeren/offline-page/issues"
+  },
+  "homepage": "https://github.com/webdokkeren/offline-page#readme",
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
