@@ -1,0 +1,33 @@
+<html>
+  <head>      
+      <link href="/style.css" rel="stylesheet">      
+  </head>
+  <body>    
+    <header id="header">      
+      <nav id="nav-bar">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="/index.html">Homepage</a></li>
+          <li class="nav-link"><a href="/subpage.html">Other stuff</a></li>
+          <li class="nav-link"><a href="/subpage.html">Hidden stuff</a></li>
+      </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Service workers are awesome!</h1>
+      <p class="subtext">This page is online</p>
+    </main>    
+    </section>  
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+              .then(function(registration) {
+                  return 'Registration successful, scope is:' +  registration.scope;
+              })
+              .catch(function(error) {
+                  return 'Service worker registration failed, error:' + error;
+              });
+        }
+    </script>
+    </body>
+  </body>
+</html>
